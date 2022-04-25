@@ -10,9 +10,11 @@ import {MyserviceService} from './myservice.service'
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
   text:string;
+  emp:any[];
   constructor(private _myservice: MyserviceService){}
 
     ngOnInit(){
           this.text= this._myservice.display();
+          this.emp=this._myservice.employee;
     }
   }

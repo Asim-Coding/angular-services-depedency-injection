@@ -5,7 +5,12 @@ import { Injectable } from '@angular/core';
   )
 export class MyserviceService {
   employee:any[];
-  constructor() { }
+  constructor() { 
+    this.employee=[
+      {empcode:'001', name:'ali',age:22},
+      {empcode:'002', name:'raja',age:33}
+    ]
+  }
   display(){
     return 'pakistan zindabad';
   }
